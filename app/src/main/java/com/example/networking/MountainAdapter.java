@@ -34,6 +34,10 @@ public class MountainAdapter extends RecyclerView.Adapter<MountainAdapter.Mounta
         return mountains.size();
     }
 
+    public void setMountains(List<String> mountains) {
+        this.mountains = mountains;
+    }
+
     public class MountainAdapterViewHolder extends RecyclerView.ViewHolder {
         private TextView mountain_name;
         public MountainAdapterViewHolder(@NonNull View itemView) {
